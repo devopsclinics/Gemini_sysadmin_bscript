@@ -19,21 +19,7 @@ fi
 
 #monitor_log "$1" "$2"
 
-##!/bin/bash
-## Description: Log monitoring script
-#
-#monitor_log() {
-#    local logfile=$1
-#    local pattern=$2
-#
-#    tail -F $logfile | while read line; do
-#        if [[ $line =~ $pattern ]]; then
-#            echo "Pattern found: $line"
-#        fi
-#    done
-#}
-#
-## Call the function
+#Call the function
 #monitor_log "/var/log/syslog" "ERROR"
 
 #./log_monitor.sh /var/log/syslog "ERROR"    # Monitor /var/log/syslog for the word "ERROR"
